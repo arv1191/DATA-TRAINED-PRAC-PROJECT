@@ -1,0 +1,67 @@
+ 
+1. SELECT E.first_name, E.last_name, E.email,E.PhoneNo,E.salary, D.department_id, D.department_name 
+ FROM employees E 
+   RIGHT OUTER JOIN departments D
+     ON E.department_id = D.department_id;
+   from employee where DeptId=2
+
+2.select * from employee where dno=1,2 and salary >=15000 and salary 
+<=20000;
+
+3.HARRY POTTER
+
+4.# Taking kilometers input from the user
+kilometers = float(input("Enter value in kilometers: "))
+
+# conversion factor
+conv_fac = 0.621371
+
+# calculate miles
+miles = kilometers * conv_fac
+print('%0.2f kilometers is equal to %0.2f miles' %(kilometers,miles))
+
+5.select * from employee where dno=1 and salary >=20000 
+
+6.dic = dict()
+n = int(input('Enter The Number Of Cities : '))
+for i in range(n):
+  city = input('Enter A Name Of The City : ')
+  temp = int(input('Enter The Temperature In Celcious Of The City : '))
+  dic[city] = temp
+print('Created Dictionary Is : ',dic)
+city_name = input('Enter Name Of The City To Check Temperature Of It : ')
+print('Temperature Of The City Is : ',dic[city_name])
+
+7.Celsius to Fahrenheit Formula :- Celsius = (Fahrenheit – 32) * 5/9
+
+# Python program to convert temperature from Celsius to Fahrenheit
+ 
+celsius = float(input("Enter temperature in celsius :- "))
+ 
+fahrenheit = (celsius * 9/5) + 32
+ 
+print('%.2f Celsius is :- %0.2f Fahrenheit' %(celsius, fahrenheit))
+
+8.num=input("enter the number:")
+# num=[1,2,3,4,5,6,7,8,9,10]
+if (num%2==0):
+    print "The number is even"
+    print num**(1./3.)
+else:
+    print "The number is odd"
+    print num*num
+9.dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"
+}
+
+dict['location'] = sample_dict.pop('city')
+print(dict)
+
+10.
+lst=[1,2,3,4,5] 
+for i in range(len(lst)): 
+    lst[i]=lst[i]**2 
+print(lst)
